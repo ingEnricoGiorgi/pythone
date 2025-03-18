@@ -1,3 +1,4 @@
 #saluto.py
 nome="Enrico Giorgi"
-print("Mi chiamo",nome)
+città="Roma"
+print("Mi chiamo", nome, 'e vivo a', città)
