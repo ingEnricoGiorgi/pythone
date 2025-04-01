@@ -1,4 +1,4 @@
-# Shift + Alt + F
+# Shift + Alt + F  default formatter
 reddito = float(input("Immetti il tuo reddito in numeri: \n"))
 scaglione1 = 28000
 scaglione2 = 50000
