@@ -4,6 +4,7 @@ isPet=False
 nItems = 0
 prices=[]
 temp=[]
+scontoApplicato=0.2
 inputPrice=input("Digita prezzi: ")
 while inputPrice !="-1":
       if "Y" in inputPrice:
@@ -15,7 +16,7 @@ while inputPrice !="-1":
 def discount(prices, nItems):
     sconto=0
     if(nItems>5):
-        sconto=0.20*sum(prices)
+        sconto=scontoApplicato*sum(prices)
     return sconto 
 
 if  nItems>6 and isPet:
