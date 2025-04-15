@@ -15,7 +15,6 @@ class Letter:
         return text
 
 
-# Programma di collaudo
 letter = Letter("Trump", "Elon")
 letter.addLine("You're fired")
 letter.addLine("I wish you all the best.")
