@@ -1,21 +1,21 @@
 class Student:
     def __init__(self, name):
-        self.name = name
-        self.quiz_scores = []
+        self._name = name
+        self._quiz_scores = []
 
     def getName(self):
-        return self.name
+        return self._name
 
     def addQuiz(self, score):
-        self.quiz_scores.append(score)
+        self._quiz_scores.append(score)
 
     def getTotalScore(self):
-        return sum(self.quiz_scores)
+        return sum(self._quiz_scores)
 
     def getAverageScore(self):
-        if len(self.quiz_scores) == 0:
+        if len(self._quiz_scores) == 0:
             return 0
-        return sum(self.quiz_scores) / len(self.quiz_scores)
+        return sum(self._quiz_scores) / len(self._quiz_scores)
     
 student1 = Student(name="Marco Rossi")
 
@@ -32,6 +32,6 @@ media = student1.getAverageScore()
 
 # Stampare i risultati
 print(f"Nome studente: {nome}")
-print(f"Punteggi quiz: {student1.quiz_scores}")
+print(f"Punteggi quiz: {student1._quiz_scores}")
 print(f"Punteggio totale: {punteggio_totale}")
 print(f"Media dei punteggi: {media:.2f}")
