@@ -7,6 +7,8 @@ def main():
         numbers = [float(line.strip()) for line in file]
     
     max_value = max(numbers)
+    media = sum(numbers) / len(numbers)
+    print(f"La media è: {media}")
     print(f"Il valore massimo trovato nel file è: {max_value}")
 
 if __name__ == "__main__":
