@@ -18,8 +18,9 @@ for tr in table.contents[2:-2]:
         kmq = tds[4].get_text()
         sigl = tds[7].get_text()
         valoreDens = float(tds[5].get_text().replace(".", "").replace(",", "."))
-        dens = round(valoreDens)
-        calcDens = int(resi / int(kmq.replace(".", "").replace(",", ".")))
+        dens = round(valoreDens,1)
+        calcDensTemp = float(resi / float(kmq.replace(".", "").replace(",", ".")))
+        calcDens=round(calcDensTemp,1)
         if(dens != calcDens):
             message="Valore discostato"
         else:
@@ -28,4 +29,4 @@ for tr in table.contents[2:-2]:
         #print(f"{'Sigla'} {'Provincia':25s} {'Residenti':9s} {'Kmq':5s} {'Dens':5s} {'CalcD':5s} {'Valutazione':15s}")
 
 
-        print(f"{sigl} {prov:25s} {resi:9d} {kmq:5s} {dens:5d} {calcDens:5d} {message:15s}")
+        print(f"{sigl} {prov:25s} {resi:9d} {kmq:5s} {dens:.1f} {calcDens:.1f} {message:15s}")
