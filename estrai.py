@@ -29,4 +29,4 @@ for tr in table.contents[2:-2]:
         #print(f"{'Sigla'} {'Provincia':25s} {'Residenti':9s} {'Kmq':5s} {'Dens':5s} {'CalcD':5s} {'Valutazione':15s}")
 
 
-        print(f"{sigl} {prov:25s} {resi:9d} {kmq:5s} {dens:.1f} {calcDens:.1f} {message:15s}")
+        print(f"{sigl} - {prov:25s} - {resi:9d} - {kmq:5s} - {dens:.1f} - {calcDens:.1f} - {message:15s}")
