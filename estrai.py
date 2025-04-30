@@ -25,5 +25,7 @@ for tr in table.contents[2:-2]:
         else:
             message="Valore corretto"    
         #print(f"{sequ:3d} {prov:25s} {resi:9d} {sigl}")
-        #print("sigla, provincia, residenza, kmq, dens, calcDens, valoreDens")
+        #print(f"{'Sigla'} {'Provincia':25s} {'Residenti':9s} {'Kmq':5s} {'Dens':5s} {'CalcD':5s} {'Valutazione':15s}")
+
+
         print(f"{sigl} {prov:25s} {resi:9d} {kmq:5s} {dens:5d} {calcDens:5d} {message:15s}")
