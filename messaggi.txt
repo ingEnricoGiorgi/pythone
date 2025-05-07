@@ -1,0 +1,4 @@
+2025/05/07 09:59:12;Mario;Luigi;Ciao, come stai?
+2025/05/07 10:15:30;Luigi;Mario;Tutto bene, grazie! E tu?
+2025/05/06 18:45:22;Giulia;Mario;Ricordati della riunione domani.
+2025/05/07 08:30:00;Marco;Tutti;Buongiorno a tutti!
